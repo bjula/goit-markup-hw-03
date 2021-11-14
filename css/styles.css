@@ -57,6 +57,19 @@ h1, h2, h3, h4, p, a, ul, li{
 
     outline: 2px solid tomato;
 }
+
+/* ------------------- main-nav ------------------- */
+
+.main-nav{
+    display: flex;
+    
+    
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
  
 /* -------------------logo styles------------------- */
 
@@ -67,6 +80,8 @@ h1, h2, h3, h4, p, a, ul, li{
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
+    margin-right: 93px;
    }
 
 .logo-header{
@@ -75,25 +90,50 @@ h1, h2, h3, h4, p, a, ul, li{
 
 /* --------------------site nav----------------------*/
 
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--main-title-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-title-color);
 }
 
 .site-nav .link:hover, 
 .site-nav .link:focus{
     color:var(--accent-color);
 }
+/* --------------------contact------------------- */
 
+.contact{
+    display: flex;
+    margin-left: auto;
+}
+
+.contact .item + .item{
+    margin-left: 50px;
+}
 .contact-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--main-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
 }
 
 .contact-link:hover, 
@@ -146,6 +186,7 @@ h1, h2, h3, h4, p, a, ul, li{
 }
 
 .button{
+    display: inline-block;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -155,7 +196,8 @@ h1, h2, h3, h4, p, a, ul, li{
     color: var(--main-title-color);
     background: var(--second-background-color);
     border-radius: 4px;
-    border: var(--second-background-color);
+    padding: 6px 22px;
+    border: 1px solid transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -232,7 +274,9 @@ h1, h2, h3, h4, p, a, ul, li{
     font-size: 18px;
     line-height: 2.00;
     letter-spacing: 0.06em;
-    color: var(--main-title-color)
+    color: var(--main-title-color);
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .portfolio-text{
