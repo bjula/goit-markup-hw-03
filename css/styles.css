@@ -47,16 +47,14 @@ h1, h2, h3, h4, p, a, ul, li{
     padding-right: 15px;
     margin: 0 auto;
 
-
-    outline: 2px solid yellow;
+    /*outline: 2px solid yellow;*/
 }
 
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
 
-
-   outline: 2px solid tomato;
+   /*outline: 2px solid tomato;*/
 }
 
 /* ------------------- main-nav ------------------- */
@@ -148,9 +146,13 @@ h1, h2, h3, h4, p, a, ul, li{
 
 /*--------------------Hero-------------------------- */
 
-.hero{
+.section.hero{
     background-color:var(--hero-footer-background-color);
     text-align: center;
+    padding-top: 213px;
+    padding-right: 350px;
+    padding-bottom: 187px;
+    padding-left: 350px;
 }
 
 .hero .hero-title{
@@ -324,6 +326,10 @@ h1, h2, h3, h4, p, a, ul, li{
 }
 
 /*------------------------portfolio--------------------- */
+.section.portfolio{
+    padding-top: 102px;
+    padding-bottom: 86px;
+}
 
 .buttons-list{
     display: flex;
