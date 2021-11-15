@@ -10,6 +10,7 @@
     --main-background-color:#FFFFFF;
     --hero-footer-background-color:#2F303A;
     --second-background-color:#F5F4FA;
+    --line-color:#ECECEC;
 }
 
 /* основной цвет заголовков #212121 */
@@ -47,7 +48,7 @@ h1, h2, h3, h4, p, a, ul, li{
     margin: 0 auto;
 
 
-    outline: 2px solid yellow;
+    /*outline: 2px solid yellow;*/
 }
 
 .section{
@@ -55,10 +56,14 @@ h1, h2, h3, h4, p, a, ul, li{
     padding-bottom: 94px;
 
 
-    outline: 2px solid tomato;
+    /*outline: 2px solid tomato;*/
 }
 
 /* ------------------- main-nav ------------------- */
+
+.page-header{
+    border-bottom: 1px solid var(--line-color);
+}
 
 .main-nav{
     display: flex;
@@ -249,7 +254,7 @@ h1, h2, h3, h4, p, a, ul, li{
     color: var(--main-text-color);
 }
 
-/*----------------------чем занимаемся---------------------- */
+/*----------------------чем занимаемся-------------------- */
 
 .title{
     font-weight: 700;
@@ -260,7 +265,42 @@ h1, h2, h3, h4, p, a, ul, li{
     color: var(--main-title-color);
     margin-bottom: 50px;
 }
-/*----------------------section our team---------------------- */
+
+.work-list{
+    display: flex;
+}
+
+.work-list .item + .item{
+    margin-left: 30px;
+}
+
+/*----------------------section our team--------------------- */
+
+.team{
+    background-color: var(--second-background-color);
+}
+.team-list{
+    display: flex;
+}
+.team-list .item{
+    display: block;
+
+    background-color: var(--main-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.team-list .item + .item{
+    margin-left: 30px;
+}
+
+.photo{
+    margin-bottom: 30px;
+}
+
 .team-title{
     font-weight: 500;
     font-size: 16px;
@@ -268,6 +308,8 @@ h1, h2, h3, h4, p, a, ul, li{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-title-color);
+
+    margin-bottom: 10px;
 }
 
 .team-text{
@@ -276,6 +318,8 @@ h1, h2, h3, h4, p, a, ul, li{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+
+    margin-bottom: 30px;
 }
 
 /*------------------------portfolio--------------------- */
@@ -301,12 +345,14 @@ h1, h2, h3, h4, p, a, ul, li{
 .logo-footer{
     display: inline-block;
     margin-bottom: 20px;
+
     color: var(--logo-footer-color);
 }
 
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
+
     background-color: var(--hero-footer-background-color);
 }
 
@@ -325,6 +371,11 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--mail-tel-footer-color);
+}
+
+.address .mail{
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .address .link:hover,
